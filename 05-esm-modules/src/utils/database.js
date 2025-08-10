@@ -11,6 +11,7 @@ async function disconnectDatabase(database){
     console.log("Desconectando do banco: " + database)
 }
 
+//exportação atraves do objeto
 export {
     connectToDatabase,
     disconnectDatabase,
