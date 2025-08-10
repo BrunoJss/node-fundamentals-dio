@@ -1,3 +1,4 @@
-import connectToDatabase from "./utils/database.js";
+import * as database from "./utils/database.js";
 
-connectToDatabase("my-database")
+database.connectToDatabase("my-database")
+database.disconnectDatabase("my-database")
