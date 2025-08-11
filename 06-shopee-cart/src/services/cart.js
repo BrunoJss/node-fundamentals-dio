@@ -9,9 +9,16 @@ async function calculateTotal(userCart) {
 }
 
 //deletar item
-async function deleteItem(userCart, nameItem){}
+async function deleteItem(userCart, nameItem){
+    const index = userCart.findIndex((item) => item.name === nameItem);
+    if(index !== -1){
+        userCart.splice(index, 1)
+    }
+}
 //remover um item - diminui item
-async function removeItem(userCart, indexItem){}
+async function removeItem(userCart, indexItem){
+    
+}
 //calcular total
 
 export {
