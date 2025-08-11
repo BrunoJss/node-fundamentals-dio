@@ -18,7 +18,11 @@ async function deleteItem(userCart, nameItem){
 }
 //remover um item - diminui item
 async function removeItem(userCart, indexItem){
+    const deleteIndex = indexItem - 1;
 
+    if(indexItem >= 0 && indexItem < userCart.length){
+        userCart.splice(deleteIndex, 1)
+    }
 }
 
 async function displayCart(userCart){
