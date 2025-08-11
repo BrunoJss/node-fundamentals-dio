@@ -17,11 +17,20 @@ async function deleteItem(userCart, nameItem){
     }
 }
 //remover um item - diminui item
-async function removeItem(userCart, indexItem){
-    const deleteIndex = indexItem - 1;
+async function removeItem(userCart, item) {
+    const indexFound = userCart.findIndex((p) => p.name === item.name)
 
-    if(indexItem >= 0 && indexItem < userCart.length){
-        userCart.splice(deleteIndex, 1)
+    if ( indexFound == -1) {
+        console.log("Item não encontrado");
+        return;
+    }
+
+    if(userCart[indexFound].quantity > 1){
+        userCart[indexFound].quantity -= 1;
+        // userCart[indexFound].subtotal()
+    } else if (userCart[indexFound].quantity == 1){
+        deleteItem(userCart, userCart[indexFound].name)
+
     }
 }
 
