@@ -4,7 +4,8 @@ async function addItem(userCart, item){
     userCart.push(item)
 }
 async function calculateTotal(userCart) {
-    return userCart.reduce((total, item) => total + item.subtotal(), 0)
+    const result = userCart.reduce((total, item) => total + item.subtotal(), 0);
+    console.log(result)
 }
 
 //deletar item
