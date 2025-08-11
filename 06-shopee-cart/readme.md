@@ -1,16 +1,7 @@
-# 🛒 Carrinho de Compras
+##Objetivo
 
-## 📌 Objetivo
-Implementar um sistema de **carrinho de compras** inspirado no modelo da **Shopee**, onde seja possível armazenar itens e calcular automaticamente o **subtotal** de cada um, além do total geral do carrinho.
+Criar um carrinho de compra baseado no carrinho da shopee, onde o carrinho armazene itens e faça o calculo de sub-itens automaticamente
 
-## 🗂 Domínio da Aplicação
-- **Carrinho de Compras**  
-  - **Carrinho**: responsável por gerenciar a lista de itens e calcular o valor total.
-  - **Itens**: cada produto adicionado ao carrinho, contendo informações como nome, preço, quantidade e subtotal.
-
-## ⚙️ Funcionalidades
-- Adicionar e remover itens.
-- Atualizar quantidade de itens.
-- Calcular automaticamente:
-  - Subtotal de cada item.
-  - Total geral do carrinho.
+//dominio da aplicacao: carrinho de compras
+//->carrinho
+//->itens
