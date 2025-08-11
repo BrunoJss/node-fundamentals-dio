@@ -7,7 +7,7 @@ async function createitem(name, price, quantity) {
         price,
         quantity,
         subtotal() {
-            return this.price * this.quantity
+            return (this.price * this.quantity).toFixed(2)
         }
     }
 }

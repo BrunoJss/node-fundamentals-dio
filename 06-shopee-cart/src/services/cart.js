@@ -3,10 +3,11 @@
 async function addItem(userCart, item){
     userCart.push(item)
 }
+
 async function calculateTotal(userCart) {
     console.log("Shopee cart total is:")
-    const result = userCart.reduce((total, item) => total + item.subtotal(), 0);
-    console.log(`Total: ${result}`)
+    const result = userCart.reduce((total, item) => total + Number(item.subtotal()), 0);
+    console.log(`Total: ${result.toFixed(2)}`)
 }
 
 //deletar item
@@ -34,6 +35,30 @@ async function removeItem(userCart, item) {
     }
 }
 
+async function updateItemQuantity(userCart, item, newQuantity){
+    const indexFound = userCart.findIndex((i) => i.name === item.name)
+
+    if(indexFound == -1){
+        console.log("Item não encontrado");
+        return;
+    }
+
+    const foundItem = userCart[indexFound];
+    foundItem.quantity = newQuantity;
+}
+
+async function increaseMoreOneItem(userCart, item){
+    const indexFound = userCart.findIndex((i) => i.name === item.name)
+
+    if(indexFound == -1){
+        console.log("Item não encontrado");
+        return;
+    }
+
+    const foundItem = userCart[indexFound];
+    foundItem.quantity += 1;
+}
+
 async function displayCart(userCart){
     console.log("Shopee cart list:")
     userCart.forEach((item, index) => {
@@ -41,12 +66,14 @@ async function displayCart(userCart){
     })
 }
 
-//calcular total
+
 
 export {
     addItem,
     calculateTotal,
     deleteItem,
     removeItem,
-    displayCart
+    displayCart,
+    updateItemQuantity,
+    increaseMoreOneItem
 }
