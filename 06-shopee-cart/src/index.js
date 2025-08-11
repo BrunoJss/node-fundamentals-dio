@@ -13,15 +13,7 @@ await cartService.addItem(myCart, item1)
 await cartService.addItem(myCart, item2)
 
 await cartService.removeItem(myCart, item2)
-await cartService.removeItem(myCart, item2)
-await cartService.removeItem(myCart, item2)
 
 await cartService.displayCart(myCart)
 
-
 await cartService.calculateTotal(myCart)
-
-// await cartService.deleteItem(myCart, item2.name)
-// await cartService.deleteItem(myCart, item1.name)
-
-// await cartService.calculateTotal(myCart)

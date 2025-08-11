@@ -25,11 +25,11 @@ async function removeItem(userCart, item) {
         return;
     }
 
-    if(userCart[indexFound].quantity > 1){
-        userCart[indexFound].quantity -= 1;
-        // userCart[indexFound].subtotal()
-    } else if (userCart[indexFound].quantity == 1){
-        deleteItem(userCart, userCart[indexFound].name)
+    const foundItem = userCart[indexFound];
+    if(foundItem.quantity > 1){
+        foundItem.quantity -= 1;
+    } else if (foundItem.quantity == 1){
+        deleteItem(userCart, foundItem.name)
 
     }
 }
