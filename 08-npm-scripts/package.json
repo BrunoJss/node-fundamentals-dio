@@ -1,0 +1,13 @@
+{
+  "name": "08-npm-scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "myScript": "echo \"Hello World\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
