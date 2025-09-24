@@ -18,24 +18,24 @@ Ele permite:
 ---
 
 ## 📂 Estrutura do projeto
-📦 projeto-qrcode
-┣ 📂 src
-┃ ┣ 📂 prompts
-┃ ┃ ┣ 📜 prompt-main.js
-┃ ┃ ┗ 📜 prompt-qrcode.js
-┃ ┣ 📂 services
-┃ ┃ ┣ 📂 password
-┃ ┃ ┃ ┣ 📂 utils
-┃ ┃ ┃ ┃ ┗ 📜 permitted-characters.js
-┃ ┃ ┃ ┣ 📜 create.js
-┃ ┃ ┃ ┗ 📜 handle.js
-┃ ┃ ┣ 📂 qr-code
-┃ ┃ ┃ ┣ 📜 create.js
-┃ ┃ ┃ ┗ 📜 handle.js
-┃ ┗ 📜 index.js
-┣ 📜 .env.example
-┣ 📜 package.json
-┗ 📜 README.md
+📦 projeto-qrcode  
+┣ 📂 src  
+┃ ┣ 📂 prompts  
+┃ ┃ ┣ 📜 prompt-main.js  
+┃ ┃ ┗ 📜 prompt-qrcode.js  
+┃ ┣ 📂 services  
+┃ ┃ ┣ 📂 password  
+┃ ┃ ┃ ┣ 📂 utils  
+┃ ┃ ┃ ┃ ┗ 📜 permitted-characters.js  
+┃ ┃ ┃ ┣ 📜 create.js  
+┃ ┃ ┃ ┗ 📜 handle.js  
+┃ ┃ ┣ 📂 qr-code  
+┃ ┃ ┃ ┣ 📜 create.js  
+┃ ┃ ┃ ┗ 📜 handle.js  
+┃ ┗ 📜 index.js  
+┣ 📜 .env.example  
+┣ 📜 package.json  
+┗ 📜 README.md  
 
 - **.env.example** → Guarda as variáveis de ambiente, como padrões de senha. Renomeie para ".env", apenas.  
 - **index.js** → Arquivo principal do projeto  
